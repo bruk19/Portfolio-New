@@ -1,0 +1,35 @@
+.media-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 0.8rem;
+}
+
+.media {
+    margin-left: 3rem;
+}
+
+@media screen and (max-width: 750px) {
+    .media-list {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .media {
+        margin-left: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+ 
+ }
+
+ @media screen and (max-width: 450px) {
+    .media {
+        margin-left: 1.1rem;
+    }
+ 
+ }
+ 
