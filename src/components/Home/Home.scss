@@ -1,0 +1,89 @@
+.all-home {
+    margin-top: 12rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.home-an {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-span {
+    color: #fdae05;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-family: Poppins,sans-serif;
+}
+
+.home-t {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-family: Poppins,sans-serif;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.Home {
+
+    p {
+        display: flex;
+        text-align: center;
+        color: hsla(0,0%,100%,.733);
+        font-size: 20px;
+        max-width: 650px;
+        line-height: 27px;
+        font-family: Poppins,sans-serif;
+    }
+}
+
+.cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+    padding-top: 5rem;
+}
+
+.res-b {
+    width: 9rem;
+    height: 2.5rem;
+    color: hsla(0,0%,100%,.733);
+    background-color: rgb(4, 5, 82);
+    font-size: 1rem;
+    font-family: Poppins,sans-serif;
+    border: 2px solid hsla(0,0%,100%,.733);
+    cursor: pointer;
+}
+
+.btn-cv {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #fdae05;
+    width: 9rem;
+    color: hsla(0,0%,100%,.733);
+    height: 2.5rem;
+    font-size: 1rem;
+    font-family: Poppins,sans-serif;
+    border: 2px solid hsla(0,0%,100%,.733);
+    cursor: pointer;
+}

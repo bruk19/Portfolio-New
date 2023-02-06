@@ -1,0 +1,45 @@
+.form-group {
+    width: 100%;
+}
+
+.form-group {
+    color: rgba(253, 253, 253, 0.699);
+    display: flex;
+    align-items: flex-start;
+}
+ 
+label {
+    font-size:  1.1rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    margin-top: 0.3rem;
+    border: none;
+    outline: none;
+    color: rgba(253, 253, 253, 0.699);
+    background-color: rgba(0, 0, 0, 0.534);
+}
+
+.form-groups {
+    color: rgba(253, 253, 253, 0.699);
+    width: 80%;
+    
+    input,
+    textarea {
+      height: 120px;
+    }
+}
+
+button {
+    width: 8rem;
+    background-color: rgba(253, 253, 253, 0.699);
+    height: 2rem;
+    color: rgba(0, 0, 0, 0.534);
+    border-radius: 10px;
+    font-size: 17px;
+}

@@ -1,0 +1,45 @@
+.tools-container {
+    margin-top: 100px;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 45px;
+    font-family: Poppins,sans-serif;
+}
+
+.list-t {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .tol-list{
+      width: 200px;
+      height: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      size: 150px;
+      box-shadow: 5px 5px 10px #4b5563;
+      margin-top: 25px;
+    }
+
+    p {
+      display: none;
+    }
+
+    .tol-list:hover {
+        box-shadow: 10px 10px 10px #b8c6db;
+
+        p {
+            display: flex;
+            padding-bottom: 5px;
+            color: white;
+            font-weight: 600;
+            text-shadow: 5px 5px 5px rgb(199, 3, 3);
+            transition: 2s;
+        }
+    }
+}
