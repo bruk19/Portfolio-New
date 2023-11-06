@@ -1,0 +1,54 @@
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+  margin: 1.2rem 0rem;
+}
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+    button {
+      margin: 0 0.9rem;
+      font-size: 1.1rem;
+      background-color: #47505a;
+      color: rgb(156, 140, 140);
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      animation: button-fade 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    
+  }
+
+
+  @keyframes slide-in {
+    0% {
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes button-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
