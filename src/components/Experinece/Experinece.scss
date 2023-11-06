@@ -90,3 +90,31 @@
   }
 }
 
+@media (max-width: 768px) {
+  .slider-container .slide {
+    width: 90%;
+
+    img {
+      width: 100%;
+    }
+
+    .slide-content {
+      h3 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .slider-container .button-container {
+    flex-direction: column;
+    margin-top: 0.5rem;
+
+    button {
+      margin: 0.5rem 0;
+    }
+  }
+}
