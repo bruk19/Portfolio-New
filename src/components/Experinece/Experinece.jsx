@@ -1,9 +1,12 @@
 import './Experinece.scss'
 import React, { useState } from 'react';
+import img1 from '../Assets/crypto.png'
+import img2 from '../Assets/movie.png'
 
 const Slide = ({ image, description, jobTitle, companyLocation }) => {
   return (
     <div className="slide">
+     
       <img src={image} alt="Experience" />
       <div className="slide-content">
         <h3>{jobTitle}</h3>
@@ -17,13 +20,13 @@ const Slide = ({ image, description, jobTitle, companyLocation }) => {
 const ExperienceSlider = () => {
   const experiences = [
     {
-      image: 'path/to/image1.jpg',
+      image: img1,
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       jobTitle: 'Web Developer',
       companyLocation: 'New York, USA'
     },
     {
-      image: 'path/to/image2.jpg',
+      image: img2,
       description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
       jobTitle: 'Software Engineer',
       companyLocation: 'San Francisco, USA'
@@ -42,7 +45,9 @@ const ExperienceSlider = () => {
   };
 
   return (
-    <div className="slider-container">
+    <>
+     <h2 className='ex-tit'>experiences</h2>
+     <div className="slider-container">
       <button className='button' onClick={prevSlide}>&#8592; Previous</button>
       <Slide
         image={experiences[currentSlide].image}
@@ -52,6 +57,7 @@ const ExperienceSlider = () => {
       />
       <button className='button' onClick={nextSlide}>Next &#8594;</button>
     </div>
+    </>
   );
 };
 

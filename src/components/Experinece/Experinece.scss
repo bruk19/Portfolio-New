@@ -3,8 +3,18 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  width: 100vw;
   background-color: black;
   margin: 1.2rem 0rem;
+}
+
+.ex-tit {
+  display: flex;
+    justify-content: center;
+    color: #f1e7e7;
+    font-size: 45px;
+    margin-top: 20px;
+    font-family: Poppins,sans-serif;
 }
 
   .button-container {
@@ -15,14 +25,14 @@
   }
 
     button {
-      margin: 0 0.9rem;
-      font-size: 1.1rem;
-      background-color: #47505a;
-      color: rgb(156, 140, 140);
-      border: none;
+      width: 7rem;
+      height: 2.5rem;
+      color: hsla(0,0%,100%,.733);
+      background-color: rgb(4, 5, 82);
+      font-size: 1rem;
+      font-family: Poppins,sans-serif;
+      border: 2px solid hsla(0,0%,100%,.733);
       cursor: pointer;
-      transition: background-color 0.3s ease;
-      animation: button-fade 0.3s ease-in-out;
 
       &:hover {
         background-color: #0056b3;
@@ -46,9 +56,10 @@
     animation: slide-in 0.5s ease-in-out;
 
     img {
-      width: 90%;
+      width: 100%;
       max-width: 100%;
       height: auto;
+      padding-top: 0;
       margin-bottom: 1rem;
     }
 
