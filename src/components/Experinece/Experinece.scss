@@ -30,6 +30,44 @@
     
   }
 
+  .slide {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    background-color: #ffffff;
+    color: black;
+    margin: 4rem auto 2rem;
+    animation: slide-in 0.5s ease-in-out;
+
+    img {
+      width: 90%;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    .slide-content {
+      margin-bottom: 1rem;
+      text-align: center;
+
+      h3 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+      }
+    
+  }
 
   @keyframes slide-in {
     0% {
