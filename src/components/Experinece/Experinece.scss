@@ -1,0 +1,142 @@
+.whole-ex {
+  background-color: rgb(31, 30, 30);
+  margin: 0;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 1.2rem 0rem;
+}
+
+.ex-tit {
+  display: flex;
+    justify-content: center;
+    color: #f1e7e7;
+    font-size: 45px;
+    padding-top: 40px;
+    font-family: Poppins,sans-serif;
+}
+
+.job-tit {
+  font-family: Poppins,sans-serif;
+}
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+    button {
+      width: 7rem;
+      height: 2.5rem;
+      color: hsla(0,0%,100%,.733);
+      background-color: rgb(4, 5, 82);
+      font-size: 1rem;
+      font-family: Poppins,sans-serif;
+      border: 2px solid hsla(0,0%,100%,.733);
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    
+  }
+
+  .slide {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    background-color: #ffffff;
+    color: black;
+    margin: 6rem auto 4rem;
+    animation: slide-in 0.5s ease-in-out;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      padding-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    .slide-content {
+      margin-bottom: 1rem;
+      text-align: center;
+
+      h3 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+      }
+    
+  }
+
+  @keyframes slide-in {
+    0% {
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes button-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .slider-container .slide {
+    width: 90%;
+
+    img {
+      width: 100%;
+    }
+
+    .slide-content {
+      h3 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .slider-container .button-container {
+    flex-direction: column;
+    margin-top: 0.5rem;
+
+    button {
+      margin: 0.5rem 0;
+    }
+  }
+}

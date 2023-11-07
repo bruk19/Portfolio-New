@@ -6,6 +6,7 @@ import Navigation from './components/Navigation/Navigation';
 import Project from './components/Project/Project';
 import Tools from './components/Tools/Tools';
 import Home from './components/Home/Home';
+import ExperienceSlider from './components/Experinece/Experinece';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Navigation />
         <Home />
         <Intro />
+        <ExperienceSlider />
         <Project />
         <Tools />
         <Contact />
