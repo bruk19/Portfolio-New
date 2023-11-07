@@ -9,9 +9,9 @@ const Slide = ({ image, description, jobTitle, companyLocation }) => {
      
       <img src={image} alt="Experience" />
       <div className="slide-content">
-        <h3>{jobTitle}</h3>
-        <p>{companyLocation}</p>
-        <p>{description}</p>
+        <h3 className='job-tit'>{jobTitle}</h3>
+        <p className='comp-loc'>{companyLocation}</p>
+        <p className='des-job'>{description}</p>
       </div>
     </div>
   );
@@ -45,7 +45,7 @@ const ExperienceSlider = () => {
   };
 
   return (
-    <>
+    <div className='whole-ex'>
      <h2 className='ex-tit'>experiences</h2>
      <div className="slider-container">
       <button className='button' onClick={prevSlide}>&#8592; Previous</button>
@@ -57,7 +57,7 @@ const ExperienceSlider = () => {
       />
       <button className='button' onClick={nextSlide}>Next &#8594;</button>
     </div>
-    </>
+    </div>
   );
 };
 
